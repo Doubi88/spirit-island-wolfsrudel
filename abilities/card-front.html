@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <link href="../spirit-island-template/_global/css/global.css" rel="stylesheet" />
+  <link href="../spirit-island-template/_global/css/card.css" rel="stylesheet" />
+  <script type="text/javascript" src="../spirit-island-template/_global/js/general.js"></script>
+  <script src="../spirit-island-template/_global/js/card.js" defer></script>
+</head>
+<body>
+
+  <quick-card 
+    speed="slow"
+    cost="1" 
+    name="Wolfsichtung"
+    image="example1.png"
+    elements="moon"
+    range="sacred-site,0"
+    target="any"
+    artist-name="ARTIST NAME">
+    <rules>
+      <div>2 {fear} für jede {city}.</div>
+	  <div>1 {fear} für jede {town}</div>
+    </rules>
+  </quick-card>
+
+  <quick-card
+    speed="fast"
+    cost="3"
+    name="Starr vor Angst"
+    image="example2.png"
+    elements="moon,animal"
+    range="sacred-site,0"
+    target="any"
+    artist-name="ARTIST NAME">
+    <rules>
+      <div>
+        Invasoren führen in dieser Runde im Einfluss-Gebiet keine Aktionen aus.
+      </div>
+	  <div>2 {fear}</div>
+    </rules>
+  </quick-card>
+  
+  <quick-card
+    speed="slow"
+    cost="2"
+    name="Direktangriff"
+    image="example3.png"
+    elements="animal"
+    range="0"
+    target="ANY"
+    artist-name="ARTIST NAME">
+    <rules>
+      <div>
+        Jede deiner {presence} fügt 1 Schaden zu.
+      </div>
+	  <div>Wenn {sacred-site} im Einfluss-Gebiet:<br/>
+	  2 {fear}</div>
+    </rules>
+  </quick-card>
+
+  <quick-card
+    speed="fast"
+    cost="4"
+    name="Revierschutz"
+    image="example4.png"
+    elements="moon,animal"
+    range="sacred-site,0"
+    target="any"
+    artist-name="ARTIST-NAME">
+    <rules style="font-size: 13pt">
+      <div>
+      1 Schaden pro {presence} im Einfluss-Gebiet<br/>
+	  Verteidigen 2 pro {presence} im Einfluss-Gebiet. <br/>
+	  2 {fear}</div>
+	  <div>Wenn mindestens 2 {sacred-site} im Einfluss-Gebiet: Stattdessen:<br/>
+      4 {fear}.<br />
+      2 Schaden pro {presence} im Einfluss-Gebiet<br />
+	  Verteidigen 4 pro {presence} im Einfluss-Gebiet<br /></div>
+    </threshold>
+  </quick-card>
+
+</body>
+</html>
