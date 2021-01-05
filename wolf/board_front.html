@@ -19,7 +19,7 @@
       <section-title>SPEZIALREGELN</section-title>
       <special-rules-subtitle>Angriff des Wolfsrudels</special-rules-subtitle>
       <special-rule>
-        Jede Präsenz kämpft in der Wüten-Phase wie ein {dahan}. Präsenzen, die 2 Schaden erhalten, werden zerstört. Beim Platzieren von neuen Präsenzen kannst du auch zerstörte Präsenzen nehmen.
+        Jede {presence} kämpft in der Wüten-Phase wie ein {dahan}. {presence} die 2 Schaden erhalten werden zerstört. Beim Platzieren von neuen {presence} kannst du auch zerstörte {presence} nehmen.
       </special-rule>
     </special-rules-container>
 
@@ -28,13 +28,13 @@
       <growth title="WACHSTUM (1 DEINER WAHL)">
         <growth-group values="reclaim-all;add-presence(0)"></growth-group>
         <growth-group values="gain-power-card;add-presence(0)"></growth-group>
-        <growth-group values="gain-energy(3);add-presence(0)"></growth-group>
-        <growth-group values="gain-element(plant);add-presence(0)"></growth-group>
+        <growth-group values="gain-power-card;gain-energy(3)"></growth-group>
+        <growth-group values="gain-element(animal);add-presence(0);add-presence(0)"></growth-group>
      </growth>
 
     <presence-tracks>
-      <energy-track values="1,2,plant,3,fire,4+plant,5"></energy-track>
-      <card-play-track values="1,2,2,3,3,reclaim-one,4,5"></card-play-track>
+      <energy-track values="1,animal,3,4,animal+moon,5,6+moon"></energy-track>
+      <card-play-track values="1,2,2,3,reclaim-one,4"></card-play-track>
     </presence-tracks>
 
     <innate-powers>
@@ -44,13 +44,13 @@
         range="0"
         target="any"
         target-title="wo">
-        <level threshold="1-plant">
-          Rufe für jede {plant} eine deiner {presence} zusammen.
+        <level threshold="1-moon">
+          Rufe für jede {animal} eine deiner {presence} zusammen.
         </level>
-        <level threshold="5-plant">
+        <level threshold="1-moon,5-animal">
           Stattdessen, rufe beliebig viele deiner {presence} zusammen.
         </level>
-        <level threshold="3-plant,1-fire">
+        <level threshold="2-moon">
           Spiele diese Fähigkeit als {fast}
         </level>
       </quick-innate-power>
@@ -60,13 +60,13 @@
       range="none"
       target="any"
       target-title="wo">
-        <level threshold="1-plant">
-          Bewege für jede {plant} eine deiner {presence}.
+        <level threshold="1-moon">
+          Bewege für jede {animal} eine deiner {presence}.
         </level>
-        <level threshold="5-plant">
+        <level threshold="1-moon,5-animal">
           Stattdessen, bewege beliebig viele deiner {presence}.
         </level>
-        <level threshold="3-plant,1-fire">
+        <level threshold="2-moon">
           Spiele diese Fähigkeit als {fast}
         </level>
       </quick-innate-power>
