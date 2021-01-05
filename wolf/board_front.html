@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="../spirit-island-template/_global/css/global.css" rel="stylesheet" />
+    <link href="../spirit-island-template/_global/css/board_front.css" rel="stylesheet" />
+    <script type="text/javascript" src="../spirit-island-template/_global/js/general.js"></script>
+    <script type="text/javascript" src="../spirit-island-template/_global/js/board_front.js"></script>
+</head>
+
+<body>
+
+  <board spirit-image="example1.png" spirit-image-scale="190%"  spirit-border="example2.png">
+    
+    <spirit-name>
+      Wolfsrudel
+    </spirit-name>
+
+    <special-rules-container>
+      <section-title>SPEZIALREGELN</section-title>
+      <special-rules-subtitle>Angriff des Wolfsrudels</special-rules-subtitle>
+      <special-rule>
+        Jede Präsenz kämpft in der Wüten-Phase wie ein {dahan}. Präsenzen, die 2 Schaden erhalten, werden zerstört. Beim Platzieren von neuen Präsenzen kannst du auch zerstörte Präsenzen nehmen.
+      </special-rule>
+    </special-rules-container>
+
+    <right>
+
+      <growth title="WACHSTUM (1 DEINER WAHL)">
+        <growth-group values="reclaim-all;add-presence(0)"></growth-group>
+        <growth-group values="gain-power-card;add-presence(0)"></growth-group>
+        <growth-group values="gain-energy(3);add-presence(0)"></growth-group>
+        <growth-group values="gain-element(plant);add-presence(0)"></growth-group>
+     </growth>
+
+    <presence-tracks>
+      <energy-track values="1,2,plant,3,fire,4+plant,5"></energy-track>
+      <card-play-track values="1,2,2,3,3,reclaim-one,4,5"></card-play-track>
+    </presence-tracks>
+
+    <innate-powers>
+      <quick-innate-power
+        name="Das Rudel rufen"
+        speed="slow"
+        range="0"
+        target="any"
+        target-title="wo">
+        <level threshold="1-plant">
+          Rufe für jede {plant} eine deiner {presence} zusammen.
+        </level>
+        <level threshold="5-plant">
+          Stattdessen, rufe beliebig viele deiner {presence} zusammen.
+        </level>
+        <level threshold="3-plant,1-fire">
+          Spiele diese Fähigkeit als {fast}
+        </level>
+      </quick-innate-power>
+      <quick-innate-power
+      name="Ausschwärmen"
+      speed="slow"
+      range="none"
+      target="any"
+      target-title="wo">
+        <level threshold="1-plant">
+          Bewege für jede {plant} eine deiner {presence}.
+        </level>
+        <level threshold="5-plant">
+          Stattdessen, bewege beliebig viele deiner {presence}.
+        </level>
+        <level threshold="3-plant,1-fire">
+          Spiele diese Fähigkeit als {fast}
+        </level>
+      </quick-innate-power>
+    </innate-powers>
+  </right>
+  </board>
+</body>
+
+</html>

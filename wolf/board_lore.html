@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="../spirit-island-template/_global/css/global.css" rel="stylesheet" />
+    <link href="../spirit-island-template/_global/css/board_lore.css" rel="stylesheet" />
+    <script type="text/javascript" src="../spirit-island-template/_global/js/general.js"></script>
+    <script type="text/javascript" src="../spirit-island-template/_global/js/board_lore.js"></script>
+</head>
+
+<body>
+
+    <board>
+        <img class="spirit-image" src="example1.png" />
+        <spirit-name>
+            Wolfsrudel
+        </spirit-name>
+        <lore-description>
+            Ein Wolfsrudel, das sich zusammen bewegt und angreifen kann.
+            <br><br>
+            Hasst alles, was seinen Dschungel angreift.
+        </lore-description>
+        <second-section-container>
+            <setup>
+                <setup-title>SPIELVORBEREITUNG:</setup-title>
+                <setup-description>
+                    Platziere 2 {presence} auf deinem Startspielplan im Dschungel <icon class="jungle"></jungle><br/> mit der höchsten Zahl.
+                </setup-description>
+            </setup>
+            <play-style>
+                <play-style-title>SPIELSTIL:</play-style-title>
+                <play-style-description>
+                    Versuche, möglichst viele Präsenzen zu besitzen. Das sind die Wölfe des Rudels. Jeder Wolf kann das Land von wütenden Invasoren verteidigen.
+                </play-style-description>
+            </play-style>
+
+            <complexity>
+                <complexity-title>KOMPLEXITÄT</complexity-title>
+                <!--The value property will be used to create the red box-->
+                <complexity-value value="4">Moderate</complexity-value>
+                <red-box></red-box>
+            </complexity>
+            <!--The values on each of these properties will be used to create the colored boxes-->
+            <summary-of-powers>
+                <table class="powers-summary">
+                    <tr class="power-bar">
+                        <td>
+                            <div class="summary-of-powers-title">Zusammen-fassung Fähigkeiten</summary-of-powers-title>
+                        </td>
+                        <td valign="bottom">
+                            <div class="offense" value = "8"></div>
+                        </td>
+                        <td valign="bottom">
+                            <div class="control" value = "10"></div>
+                        </td>
+                        <td valign="bottom">
+                            <div class="fear" value = "1"></div>
+                        </td>
+                        <td valign="bottom">
+                            <div class="defense" value = "8"></div>
+                        </td>
+                        <td valign="bottom">
+                            <div class="utility" value = "1"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div>ANGRIFF</div>
+                        </td>
+                        <td>
+                            <div>BEWEGUNG</div>
+                        </td>
+                        <td>
+                            <div>FURCHT</div>
+                        </td>
+                        <td>
+                            <div>VERTEIDIGUNG</div>
+                        </td>
+                        <td>
+                            <div>SONSTIGES</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </second-section-container>
+    </board>
+
+</body>
+
+</html>
