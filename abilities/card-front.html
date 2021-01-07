@@ -66,16 +66,18 @@
     range="sacred-site,0"
     target="any"
     artist-name="ARTIST-NAME">
-    <rules style="font-size: 13pt">
+    <rules style="font-size: 13pt; line-height: 27px">
       <div>
-      1 Schaden pro {presence} im Einfluss-Gebiet<br/>
-	  Verteidigen 2 pro {presence} im Einfluss-Gebiet. <br/>
 	  2 {fear}</div>
-	  <div>Wenn mindestens 2 {sacred-site} im Einfluss-Gebiet: Stattdessen:<br/>
-      4 {fear}.<br />
-      2 Schaden pro {presence} im Einfluss-Gebiet<br />
-	  Verteidigen 4 pro {presence} im Einfluss-Gebiet<br /></div>
-    </threshold>
+	  <div>Verteidigen 1 pro {presence} im Einfluss-Gebiet.
+	  </div>
+	  <or></or>
+	  <div>Wenn mindestens 2 {sacred-site} im Einfluss-Gebiet, stattdessen:</div>
+	  <div>
+	  4 {fear}.</div>
+	  <div>
+	  Verteidigen 2 pro {presence} im Einfluss-Gebiet</div>
+    </rules>
   </quick-card>
 
 </body>
